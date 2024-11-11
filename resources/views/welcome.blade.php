@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIMA-SIKC 2023/2024</title>
-    <link rel="stylesheet" href="{{ asset('css/Home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 </head>
 <body>
     <header class="header">
@@ -25,8 +25,15 @@
     </header>
 
     <section class="hero">
-        <h1>HIMA-SIKC 2023/2024 <span>present:</span></h1>
-        <h2>VISI/MISI</h2>
+        <h1>HIMA-SIKC 2023/2024</h1>
+
+        <!-- Dropdown menu -->
+        <select class="options-dropdown">
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="others">Other Options</option>
+        </select>
+        
         <div class="buttons">
             <a href="#" class="btn">animasi video</a>
             <a href="#" class="btn">Profil</a>

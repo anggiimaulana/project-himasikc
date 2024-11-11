@@ -128,3 +128,18 @@ body {
         font-size: 0.9rem;
     }
 }
+
+.options-dropdown {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.options-dropdown:focus {
+    outline: none;
+    border-color: #666;
+}
