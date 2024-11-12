@@ -13,7 +13,7 @@ class blogController extends Controller
     {
         $title = 'Blog HIMA-SIKC';
         $slug = 'blog';
-        return view('content.blog', compact('title', 'slug'));
+        return view('content.blog.index', compact('title', 'slug'));
     }
 
     /**

@@ -13,7 +13,7 @@ class storeController extends Controller
     {
         $title = 'Store HIMA-SIKC';
         $slug = 'store';
-        return view('content.store', compact('title', 'slug'));
+        return view('content.store.index', compact('title', 'slug'));
     }
 
     /**

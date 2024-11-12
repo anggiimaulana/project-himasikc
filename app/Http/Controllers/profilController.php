@@ -13,7 +13,7 @@ class profilController extends Controller
     {
         $title = 'Profil HIMA-SIKC';
         $slug = 'profil';
-        return view('content.profil', compact('title', 'slug'));
+        return view('content.profil.index', compact('title', 'slug'));
     }
 
     /**

@@ -13,7 +13,7 @@ class fiturController extends Controller
     {
         $title = 'Fitur';
         $slug = 'fitur';
-        return view('content.fitur', compact('title', 'slug'));
+        return view('content.fitur.index', compact('title', 'slug'));
     }
 
     /**
