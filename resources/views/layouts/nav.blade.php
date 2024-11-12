@@ -22,32 +22,32 @@
         <!-- Desktop menu -->
         <div class="navbar hidden lg:flex lg:gap-x-12">
             <a href="/"
-                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'home' ? 'active' : '' }}">
+                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-amber-500 {{ $slug === 'home' ? 'active' : '' }}">
                 <i class='bx bx-home-alt text-xl'></i>
                 <p>Beranda</p>
             </a>
             <a href="/app/profil"
-                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'profil' ? 'active' : '' }}">
+                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-amber-500 {{ $slug === 'profil' ? 'active' : '' }}">
                 <i class='bx bxs-user-detail text-xl'></i>
                 <p>Profil</p>
             </a>
             <a href="/app/program"
-                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'program' ? 'active' : '' }}">
+                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-amber-500 {{ $slug === 'program' ? 'active' : '' }}">
                 <i class='bx bxs-pie-chart-alt-2 text-xl'></i>
                 <p>Program</p>
             </a>
             <a href="/app/store"
-                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'store' ? 'active' : '' }}">
+                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-amber-500 {{ $slug === 'store' ? 'active' : '' }}">
                 <i class='bx bx-store text-xl'></i>
                 <p>Store</p>
             </a>
             <a href="/app/blog"
-                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'blog' ? 'active' : '' }}">
+                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-amber-500 {{ $slug === 'blog' ? 'active' : '' }}">
                 <i class='bx bxl-blogger text-xl'></i>
                 <p>Blog</p>
             </a>
             <a href="/app/fitur"
-                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'fitur' ? 'active' : '' }}">
+                class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-amber-500 {{ $slug === 'fitur' ? 'active' : '' }}">
                 <i class='bx bx-chart text-xl'></i>
                 <p>Fitur</p>
             </a>
@@ -55,7 +55,7 @@
 
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/" class=" font-bold text-yellow-400 hover:text-yellow-300">HIMA-SIKC</a>
+            <a href="/" class=" font-bold text-amber-500 hover:text-amber-400">HIMA-SIKC</a>
         </div>
     </nav>
 
@@ -105,7 +105,7 @@
                         </a>
                     </div>
                     <div class="py-6">
-                        <a href="/" class=" font-bold text-yellow-400 hover:text-yellow-300">HIMA-SIKC</a>
+                        <a href="/" class=" font-bold text-yellow-600 hover:text-yellow-500">HIMA-SIKC</a>
                     </div>
                 </div>
             </div>

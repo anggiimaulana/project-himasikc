@@ -10,7 +10,7 @@
     <title>@yield('title')</title>
     <style>
         a.active {
-            color: rgb(250 204 21);
+            color: rgb(251 191 36);;
         }
     </style>
 </head>
