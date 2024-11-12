@@ -1,5 +1,6 @@
 @extends('content.main')
 @section('title', $title)
 @section('data')
-    {{-- ulang --}}
+<h1>store</h1>
 @endsection
+
