@@ -13,7 +13,7 @@ class programController extends Controller
     {
         $title = 'Program Kerja HIMA-SIKC';
         $slug = 'program';
-        return view('content.proker', compact('title', 'slug'));
+        return view('content.program.index', compact('title', 'slug'));
     }
 
     /**

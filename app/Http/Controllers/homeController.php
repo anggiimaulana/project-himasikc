@@ -13,7 +13,7 @@ class homeController extends Controller
     {
         $title = 'HIMA-SIKC';
         $slug = 'home';
-        return view('content.home', compact('title', 'slug'));
+        return view('content.home.index', compact('title', 'slug'));
     }
 
     /**
