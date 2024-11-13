@@ -2,9 +2,7 @@
 
 <body>
     @include('layouts.nav')
-    <div class="container">
-        @yield('data')
-    </div>
+    @yield('data')
     @include('layouts.footer')
 </body>
 

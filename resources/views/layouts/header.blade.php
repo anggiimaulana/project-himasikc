@@ -12,5 +12,10 @@
         a.active {
             color: rgb(250 204 21);
         }
+
+        .tab-button {
+            transition: none;
+        }
     </style>
+
 </head>
