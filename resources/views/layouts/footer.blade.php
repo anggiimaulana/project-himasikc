@@ -4,7 +4,7 @@
             <!-- Logo and description -->
             <div class="lg:w-2/5">
                 <div class="flex items-center space-x-4">
-                    <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo Himasikc" class="h-10 lg:h-12 w-auto">
+                    <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo Himasikc" class="h-10 lg:h-12 w-auto" loading="lazy">
                     <h2 class="text-yellow-400 font-bold text-xl hover:text-yellow-300">HIMA-SIKC 2024</h2>
                 </div>
                 <p class="text-gray-500 mt-4">

@@ -3,12 +3,14 @@
         aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
-                <img class="h-10 w-auto" src="{{ asset('assets/logo-himasikc.jpg') }}" alt="logo-himasikc">
+                <img class="h-10 w-auto" src="{{ asset('assets/logo-himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
             </a>
+            <a href="/"
+                class=" font-bold text-yellow-400 hover:text-yellow-300 lg:hidden md:hidden mt-2 ml-3">HIMA-SIKC</a>
         </div>
 
         <!-- Mobile hamburger button -->
-        <div class="flex lg:hidden">
+        <div class="flex lg:hidden md:hidden">
             <button id="menu-toggle" type="button"
                 class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -20,10 +22,10 @@
         </div>
 
         <!-- Desktop menu -->
-        <div class="navbar hidden lg:flex lg:gap-x-12">
+        <div class="navbar hidden lg:flex md:flex md:gap-x-6 lg:gap-x-12">
             <a href="/"
                 class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'home' ? 'active' : '' }}">
-                <i class='bx bx-home-alt text-xl'></i>
+                <i class='bx bxs-home text-xl'></i>
                 <p>Beranda</p>
             </a>
             <a href="/app/profil"
@@ -38,7 +40,7 @@
             </a>
             <a href="/app/store"
                 class="font-semibold text-gray-700 flex items-center gap-x-1 hover:text-yellow-300 {{ $slug === 'store' ? 'active' : '' }}">
-                <i class='bx bx-store text-xl'></i>
+                <i class='bx bxs-store text-xl'></i>
                 <p>Store</p>
             </a>
             <a href="/app/blog"
@@ -54,21 +56,23 @@
         </div>
 
 
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div class="hidden lg:flex md:flex lg:flex-1 lg:justify-end">
             <a href="/" class=" font-bold text-yellow-400 hover:text-yellow-300">HIMA-SIKC</a>
         </div>
     </nav>
 
-    <!-- Mobile menu -->
     <!-- Mobile menu -->
     <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
         <div class="fixed inset-0 z-10 bg-gray-900 opacity-50"></div>
         <div
             class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
-                <a href="/" class="-m-1.5 p-1.5">
-                    <img class="h-10 w-auto" src="{{ asset('assets/logo-himasikc.jpg') }}" alt="">
-                </a>
+                <div class="flex items-center gap-x-2">
+                    <a href="/" class="-m-1.5 p-1.5">
+                        <img class="h-10 w-auto" src="{{ asset('assets/logo-himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
+                    </a>
+                    <a href="/" class="font-bold text-yellow-400 hover:text-yellow-300 ml-1">HIMA-SIKC</a>
+                </div>
                 <button id="menu-close" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                         aria-hidden="true">
@@ -103,9 +107,6 @@
                             class="-mx-3 flex items-center gap-x-2 rounded-lg px-3 py-2 font-semibold text-gray-900 hover:bg-gray-50 hover:text-yellow-300 {{ $slug === 'fitur' ? 'active' : '' }}">
                             <i class='bx bx-chart'></i> Fitur
                         </a>
-                    </div>
-                    <div class="py-6">
-                        <a href="/" class=" font-bold text-yellow-400 hover:text-yellow-300">HIMA-SIKC</a>
                     </div>
                 </div>
             </div>

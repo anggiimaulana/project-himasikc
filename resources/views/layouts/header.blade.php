@@ -16,6 +16,15 @@
         .tab-button {
             transition: none;
         }
+
+        .active-tab {
+            /* color: rgb(56 189 248); */
+            color: rgb(251 191 36);
+
+            /* This is a shade of blue */
+            /* border-bottom: 2px solid rgb(56 189 248); */
+            border-bottom: 2px solid rgb(251 191 36);;
+        }
     </style>
 
 </head>
