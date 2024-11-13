@@ -10,7 +10,7 @@
     <title>@yield('title')</title>
     <style>
         a.active {
-            color: rgb(250 204 21);
+            color: rgb(234 179 8);
         }
 
         .tab-button {
@@ -23,7 +23,8 @@
 
             /* This is a shade of blue */
             /* border-bottom: 2px solid rgb(56 189 248); */
-            border-bottom: 2px solid rgb(251 191 36);;
+            border-bottom: 2px solid rgb(251 191 36);
+            ;
         }
     </style>
 

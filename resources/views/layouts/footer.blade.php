@@ -4,8 +4,8 @@
             <!-- Logo and description -->
             <div class="lg:w-2/5">
                 <div class="flex items-center space-x-4">
-                    <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo Himasikc" class="h-10 lg:h-12 w-auto" loading="lazy">
-                    <h2 class="text-yellow-400 font-bold text-xl hover:text-yellow-300">HIMA-SIKC 2024</h2>
+                    <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo Himasikc" class="h-10 lg:h-14 w-auto" loading="lazy">
+                    <h2 class="text-yellow-500 font-bold text-xl hover:text-yellow-400">HIMA-SIKC 2024</h2>
                 </div>
                 <p class="text-gray-500 mt-4">
                     Politeknik Negeri Indramayu <br>
@@ -39,7 +39,7 @@
                         <textarea class="px-2 border-2 border-gray-300 rounded-md w-full" name="kritikSaran" id="kritikSaran" rows="4"
                             placeholder="Isi kritik dan saran disini!"></textarea>
                         <input type="submit" name="submit" id="submit" value="Kirim"
-                            class="flex bg-amber-400 hover:bg-amber-300 hover:text-white text-white font-semibold py-2 px-5 rounded mt-4">
+                            class="flex bg-amber-500 hover:bg-amber-400 hover:text-white text-white font-semibold py-2 px-5 rounded mt-4">
                     </form>
                 </div>
             </div>
