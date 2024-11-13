@@ -12,6 +12,7 @@ Route::get('/', [homeController::class, 'index']);
 Route::get('/app/profil', [profilController::class, 'index']);
 Route::get('/app/program', [programController::class, 'index']);
 Route::get('/app/store', [storeController::class, 'index']);
-Route::get('/app/blog', [blogController::class, 'index']);
+Route::get('/app/blog/', [blogController::class, 'index']);
+Route::get('/app/blog/search', [BlogController::class, 'search'])->name('blog.search');
 Route::get('/app/fitur', [fiturController::class, 'index']);
 
