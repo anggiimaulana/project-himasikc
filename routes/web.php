@@ -14,3 +14,4 @@ Route::get('/app/program', [programController::class, 'index']);
 Route::get('/app/store', [storeController::class, 'index']);
 Route::get('/app/blog', [blogController::class, 'index']);
 Route::get('/app/fitur', [fiturController::class, 'index']);
+
