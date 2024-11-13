@@ -9,36 +9,77 @@
                 </p>
             </div>
 
-            {{-- Tabs Navigation --}}
-            <div class="flex justify-center mt-6 space-x-4 border-b pb-2">
+            {{-- Tabs --}}
+            <div class="flex justify-center mt-6 space-x-3 md:space-x-6 lg:space-x-10 border-b pb-2">
                 <button onclick="showTab('tab1')" id="tabButton1"
-                    class="tab-button py-2 text-gray-600 text-sm md:text-base lg:text-lg focus:outline-none">SEMUA</button>
+                    class="tab-button py-2 text-gray-600 text-sm lg:text-base md:text-base focus:outline-none font-bold">SEMUA</button>
                 <button onclick="showTab('tab2')" id="tabButton2"
-                    class="tab-button py-2 text-gray-600 text-sm md:text-base lg:text-lg focus:outline-none">PSDM</button>
+                    class="tab-button py-2 text-gray-600 text-sm lg:text-base md:text-base focus:outline-none font-bold">PSDM</button>
                 <button onclick="showTab('tab3')" id="tabButton3"
-                    class="tab-button py-2 text-gray-600 text-sm md:text-base lg:text-lg focus:outline-none">HUMAS</button>
+                    class="tab-button py-2 text-gray-600 text-sm lg:text-base md:text-base focus:outline-none font-bold">HUMAS</button>
                 <button onclick="showTab('tab4')" id="tabButton4"
-                    class="tab-button py-2 text-gray-600 text-sm md:text-base lg:text-lg focus:outline-none">MULTIMEDIA</button>
+                    class="tab-button py-2 text-gray-600 text-sm lg:text-base md:text-base focus:outline-none font-bold">MULTIMEDIA</button>
                 <button onclick="showTab('tab5')" id="tabButton5"
-                    class="tab-button py-2 text-gray-600 text-sm md:text-base lg:text-lg focus:outline-none">LITBANG</button>
+                    class="tab-button py-2 text-gray-600 text-sm lg:text-base md:text-base focus:outline-none font-bold">LITBANG</button>
             </div>
 
             <div id="tab1" class="tab-content mt-6">
                 <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Event ini merupakan program yang
+                            dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
+                            sebagai panitia, peserta, atau lain sebagainya.</p>
+                    </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                        <!-- Card Example -->
                         @foreach (range(1, 8) as $i)
                             <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo"
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
                                     class="w-full h-50 object-cover rounded-t-lg">
                                 <div class="mt-4">
-                                    <h1 class="text-black text-2xl font-bold">SSI</h1>
-                                    <p class="text-gray-600 text-base mt-2">Program Kerja: <span
-                                            class="text-blue-400">PSDM</span></p>
-                                    <p class="text-gray-600 text-base mt-2">Februari - November 2024</p>
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
                                     <div class="flex items-center mt-2">
                                         <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 text-base">Sedang Berjalan</p>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                {{-- Non-Event --}}
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 mt-12 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Non-Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Non-event ini merupakan program
+                            yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
+                            internal HIMA-SIKC.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $b)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
                                     </div>
                                 </div>
                             </div>
@@ -48,16 +89,260 @@
             </div>
 
             <div id="tab2" class="tab-content hidden mt-6">
-                <p>Content for PSDM.</p>
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Event ini merupakan program yang
+                            dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
+                            sebagai panitia, peserta, atau lain sebagainya.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $i)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                {{-- Non-Event --}}
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 mt-12 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Non-Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Non-event ini merupakan program
+                            yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
+                            internal HIMA-SIKC.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $b)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
             </div>
             <div id="tab3" class="tab-content hidden mt-6">
-                <p>Content for HUMAS.</p>
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Event ini merupakan program yang
+                            dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
+                            sebagai panitia, peserta, atau lain sebagainya.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $i)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                {{-- Non-Event --}}
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 mt-12 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Non-Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Non-event ini merupakan program
+                            yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
+                            internal HIMA-SIKC.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $b)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
             </div>
             <div id="tab4" class="tab-content hidden mt-6">
-                <p>Content for MULTIMEDIA.</p>
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Event ini merupakan program yang
+                            dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
+                            sebagai panitia, peserta, atau lain sebagainya.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $i)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                {{-- Non-Event --}}
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 mt-12 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Non-Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Non-event ini merupakan program
+                            yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
+                            internal HIMA-SIKC.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $b)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
             </div>
             <div id="tab5" class="tab-content hidden mt-6">
-                <p>Content for LITBANG.</p>
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Event ini merupakan program yang
+                            dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
+                            sebagai panitia, peserta, atau lain sebagainya.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $i)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                {{-- Non-Event --}}
+                <div class="sm:px-2 lg:px-10">
+                    <div class="description mb-10 mt-12 text-center">
+                        <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">Non-Event</h1>
+                        <p class="text-base font-semibold leading-7 text-gray-600">Program Non-event ini merupakan program
+                            yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
+                            internal HIMA-SIKC.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        @foreach (range(1, 8) as $b)
+                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
+                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                    class="w-full h-50 object-cover rounded-t-lg">
+                                <div class="mt-4">
+                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                        ACADEMIC ROOM</h1>
+                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
+                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                    </p>
+                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
+                                        2024
+                                    </p>
+                                    <div class="flex items-center mt-2">
+                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -68,13 +353,11 @@
             document.querySelectorAll('.tab-content').forEach(content => content.classList.add('hidden'));
 
             // Remove active styling from all tabs
-            document.querySelectorAll('.border-b-2').forEach(tab => tab.classList.remove('border-b-2', 'border-blue-600',
-                'text-blue-600'));
+            document.querySelectorAll('.tab-button').forEach(tab => tab.classList.remove('active-tab'));
 
             // Show the selected tab content and add active styling
             document.getElementById(tabId).classList.remove('hidden');
-            document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('border-b-2', 'border-blue-600',
-                'text-blue-600');
+            document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active-tab');
         }
 
         // Set default active tab
