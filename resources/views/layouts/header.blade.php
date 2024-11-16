@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="{{ asset('assets/LOGO-HIMA-SIKC FIX.png') }}" type="image/png">
     @vite('resources/css/app.css')
     <title>@yield('title')</title>
     <style>
@@ -21,7 +22,6 @@
             /* color: rgb(56 189 248); */
             color: rgb(251 191 36);
 
-            /* This is a shade of blue */
             /* border-bottom: 2px solid rgb(56 189 248); */
             border-bottom: 2px solid rgb(251 191 36);
             ;

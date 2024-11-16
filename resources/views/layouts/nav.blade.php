@@ -3,7 +3,7 @@
         aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
-                <img class="h-10 md:h-29 lg:h-12 w-auto" src="{{ asset('assets/logo-himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
+                <img class="h-10 md:h-29 lg:h-12 w-auto" src="{{ asset('assets/himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
             </a>
             <a href="/"
                 class=" font-bold text-yellow-500 hover:text-yellow-400 lg:hidden md:hidden mt-2 ml-3">HIMA-SIKC</a>
@@ -69,7 +69,7 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-x-2">
                     <a href="/" class="-m-1.5 p-1.5">
-                        <img class="h-10 w-auto" src="{{ asset('assets/logo-himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
+                        <img class="h-10 w-auto" src="{{ asset('assets/himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
                     </a>
                     <a href="/" class="font-bold text-yellow-500 hover:text-yellow-400 ml-1">HIMA-SIKC</a>
                 </div>

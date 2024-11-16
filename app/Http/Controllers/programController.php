@@ -16,6 +16,13 @@ class programController extends Controller
         return view('content.program.index', compact('title', 'slug'));
     }
 
+    public function detail()
+    {
+        $title = 'Program Kerja HIMA-SIKC';
+        $slug = 'program-detail';
+        return view('content.program.detail', compact('title', 'slug'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */

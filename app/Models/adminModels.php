@@ -4,8 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class adminModels extends Model
+class adminModels extends Authenticatable
 {
     use HasFactory;
     protected $table = 'admin';
@@ -14,6 +15,5 @@ class adminModels extends Model
         'nama',
         'email',
         'password',
-        'img'
     ];
 }

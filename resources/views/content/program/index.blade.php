@@ -31,26 +31,30 @@
                             dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
                             sebagai panitia, peserta, atau lain sebagainya.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $i)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024</p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -63,26 +67,32 @@
                             yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
                             internal HIMA-SIKC.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $b)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="https://th.bing.com/th/id/OIP.jVfc62FgQkvl2NTax9qFVQHaJW?w=144&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                                        alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024</p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Sedang Berlangsung
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -96,26 +106,31 @@
                             dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
                             sebagai panitia, peserta, atau lain sebagainya.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $i)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024</p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -128,26 +143,31 @@
                             yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
                             internal HIMA-SIKC.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $b)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024
+                                        </p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -160,26 +180,30 @@
                             dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
                             sebagai panitia, peserta, atau lain sebagainya.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $i)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024</p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -192,26 +216,31 @@
                             yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
                             internal HIMA-SIKC.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $b)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024
+                                        </p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -224,26 +253,30 @@
                             dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
                             sebagai panitia, peserta, atau lain sebagainya.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $i)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024</p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -256,26 +289,31 @@
                             yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
                             internal HIMA-SIKC.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $b)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024
+                                        </p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -288,26 +326,30 @@
                             dapat diikuti oleh seluruh anggota HIMA-SIKC. Anggota HIMA-SIKC dapat mengikuti program ini
                             sebagai panitia, peserta, atau lain sebagainya.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $i)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024</p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -320,26 +362,31 @@
                             yang diselenggarakan oleh tiap divisi untuk mengembangkan HIMA-SIKC dalam bentuk program kerja
                             internal HIMA-SIKC.</p>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                         @foreach (range(1, 8) as $b)
-                            <div class="bg-gray-100 rounded-lg p-4 shadow-lg">
-                                <img src="{{ asset('assets/logo-himasikc.jpg') }}" alt="Logo" loading="lazy"
-                                    class="w-full h-50 object-cover rounded-t-lg">
-                                <div class="mt-4">
-                                    <h1 class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
-                                        ACADEMIC ROOM</h1>
-                                    <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja: <span
-                                            class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
-                                    </p>
-                                    <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September - November
-                                        2024
-                                    </p>
-                                    <div class="flex items-center mt-2">
-                                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                        <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                            <a href="/app/program/detail/www">
+                                <div class="bg-transparent rounded-lg p-4 shadow-lg hover:shadow-2xl">
+                                    <img src="{{ asset('assets/himasikc.jpg') }}" alt="Logo" loading="lazy"
+                                        class="w-full h-36 lg:h-64 object-cover rounded-t-lg lg:p-2">
+                                    <div class="mt-4">
+                                        <h1
+                                            class="text-black sm:text-base md:text-lg lg:text-lg sm:text-semibold font-bold">
+                                            ACADEMIC ROOM</h1>
+                                        <p class="text-gray-600 md:text-base lg:text-base sm:text-sm mt-2">Program Kerja:
+                                            <span
+                                                class="text-blue-400 md:text-base lg:text-base sm:text-sm font-semibold">LITBANG</span>
+                                        </p>
+                                        <p class="text-gray-600 lg:text-base md:text-base sm:text-sm mt-2">September -
+                                            November
+                                            2024
+                                        </p>
+                                        <div class="flex items-center mt-2">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                            <p class="text-gray-600 sm:text-sm md:text-base lg:text-base">Selesai</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
