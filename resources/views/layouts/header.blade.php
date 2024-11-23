@@ -26,6 +26,24 @@
             border-bottom: 2px solid rgb(251 191 36);
             ;
         }
+
+        .overflow-x-auto::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .overflow-x-auto::-webkit-scrollbar-thumb {
+            background: #cccccc;
+            border-radius: 10px;
+        }
+
+        .overflow-x-auto::-webkit-scrollbar-track {
+            background: #f5f5f5;
+        }
+
+        .overflow-x-auto {
+            scrollbar-width: thin;
+            scrollbar-color: #cccccc #f5f5f5;
+        }
     </style>
 
 </head>

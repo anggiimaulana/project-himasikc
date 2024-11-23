@@ -16,9 +16,14 @@ return new class extends Migration
             $table->string('nama');
             $table->unsignedBigInteger('id_divisi');
             $table->integer('jenis');
+            $table->text('logo');
             $table->text('desc');
-            $table->string('logo');
-            $table->string('docs');
+            $table->text('tujuan');
+            $table->text('sasaran');
+            $table->text('hasil');
+            $table->text('docs_1');
+            $table->text('docs_2');
+            $table->text('docs_3');
             $table->year('tahun_kepengurusan');
             $table->unsignedBigInteger('id_admin');
             $table->integer('status');

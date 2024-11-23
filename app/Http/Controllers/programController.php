@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\prokerModels;
 use Illuminate\Http\Request;
 
 class programController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $title = 'Program Kerja HIMA-SIKC';
         $slug = 'program';
-        return view('content.program.index', compact('title', 'slug'));
+        $items = prokerModels::all();
+        return view('content.program.index', compact('title', 'slug', 'items'));
     }
 
     public function detail()
@@ -31,12 +30,16 @@ class programController extends Controller
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $data['logo'] = $request->file('image')->store('proker', 'public');
+        $data['docs_1'] = $request->file('image')->store('proker', 'public');
+        $data['docs_2'] = $request->file('image')->store('proker', 'public');
+        $data['docs_3'] = $request->file('image')->store('proker', 'public');
+        prokerModels::create($data);
+
+        return redirect()->back();
     }
 
     /**
