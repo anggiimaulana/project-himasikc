@@ -9,6 +9,7 @@
 <section class="py-12 bg-white sm:py-16 lg:py-10">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="max-w-md mx-auto text-center">
+            <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">BLOG</h1>
             <p class="text-base font-semibold leading-7 text-gray-600">Himpunan Mahasiswa Sistem Informasi Kota Cerdas</p>
         </div>
         
@@ -18,9 +19,9 @@
             <div class="flex">
                 <form action="https://www.google.co.jp/search" method="GET" class="flex w-full">
                     <input 
-                        name="q" 
+                        name="" 
                         class="px-14 py-3 rounded-l-md bg-gray-900 text-white focus:outline-none w-full" 
-                        placeholder="Cari Google" 
+                        placeholder="Cari Informasi" 
                         type="text"/>
                     <button type="submit" class="px-4 py-2 bg-gray-800 text-white rounded-r-md hover:bg-gray-700 focus:outline-none">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -157,49 +158,57 @@
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],
                         [
                             'title' => 'JUDUL BERITA B',
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],
                         [
                             'title' => 'JUDUL BERITA C',
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],                   [
                             'title' => 'JUDUL BERITA D',
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],
                         [
                             'title' => 'JUDUL BERITA A',
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],
                         [
                             'title' => 'JUDUL BERITA E',
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],
                         [
                             'title' => 'JUDUL BERITA F',
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],
                         [
                             'title' => 'JUDUL BERITA G',
                             'category' => 'HIMA-SIKC',
                             'description' => 'Hai hai hai! Kalian sudah tahu gak nih? Ada teknologi AI yang bisa melacak...',
                             'image' => 'https://storage.googleapis.com/a1aa/image/2FFoepXwXZy5NSbxmOoe5iE31r0hLxDnJ76xS1Qt5Y8bFfgnA.jpg',
+                            'link' => 'https://www.example.com/berita-a', // Direktori berita (link) yang ditambahkan
                         ],
-                        // Other article entries here
+                        // Tambahkan berita disini
                     ];
                     @endphp
 
@@ -210,6 +219,9 @@
                             <p class="text-sm font-medium text-gray-400">{{ $article['category'] }}</p>
                             <h3 class="text-xl font-semibold text-white mt-2">{{ $article['title'] }}</h3>
                             <p class="text-gray-400 mt-3">{{ $article['description'] }}</p>
+                            @isset($article['link'])
+                                <a href="{{ $article['link'] }}" class="text-yellow-500 hover:underline mt-3 block">Baca Selengkapnya</a>
+                            @endisset
                         </div>
                     </div>
                     @endforeach
