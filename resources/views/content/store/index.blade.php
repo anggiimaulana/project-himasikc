@@ -1,8 +1,8 @@
 @extends('content.main')
 @section('title', $title)
 @section('data')
-    <section class="py-12 bg-white sm:py-16 lg:py-10">
-        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <section class="py-12 sm:py-16 lg:py-10">
+        <div class="pt-16 lg:pt-24 sm:px-10 lg:px-16 mx-auto">
             <div class="max-w-md mx-auto text-center">
                 <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">STORE</h1>
                 <p class="text-base font-semibold leading-7 text-gray-600">Himpunan Mahasiswa Sistem Informasi Kota Cerdas

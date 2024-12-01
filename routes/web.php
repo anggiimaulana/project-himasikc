@@ -11,16 +11,28 @@ use App\Http\Controllers\storeController;
 use App\Http\Middleware\RedirectIfAuthenticated;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [homeController::class, 'index'])->name('home');
-Route::get('/app/profil', [profilController::class, 'index'])->name('profil');
-Route::get('/app/program', [programController::class, 'index'])->name('program');
-Route::get('/app/program/www', [programController::class, 'detail'])->name('program.detail');
-Route::get('/app/store', [storeController::class, 'index'])->name('store');
-Route::get('/app/blog/', [blogController::class, 'index'])->name('blog');
-Route::get('/app/blog/search', [BlogController::class, 'search'])->name('blog.search');
-Route::get('/app/fitur', [fiturController::class, 'index'])->name('fitur');
+// // halaman web
+// Route::middleware('auth')->group(function () {
+//     Route::get('', [homeController::class, 'index'])->name('home');
+//     Route::get('/app/profil', [profilController::class, 'index'])->name('profil');
+//     Route::get('/app/program', [programController::class, 'index'])->name('program');
+//     Route::get('/app/program/www', [programController::class, 'detail'])->name('program.detail');
+//     Route::get('/app/store', [storeController::class, 'index'])->name('store');
+//     Route::get('/app/blog/', [blogController::class, 'index'])->name('blog');
+//     Route::get('/app/blog/search', [BlogController::class, 'search'])->name('blog.search');
+//     Route::get('/app/fitur', [fiturController::class, 'index'])->name('fitur');
+// });
+
 
 Route::middleware('guest')->group(function () {
+    Route::get('', [homeController::class, 'index'])->name('home');
+    Route::get('/app/profil', [profilController::class, 'index'])->name('profil');
+    Route::get('/app/program', [programController::class, 'index'])->name('program');
+    Route::get('/app/program/www', [programController::class, 'detail'])->name('program.detail');
+    Route::get('/app/store', [storeController::class, 'index'])->name('store');
+    Route::get('/app/blog/', [blogController::class, 'index'])->name('blog');
+    Route::get('/app/blog/search', [BlogController::class, 'search'])->name('blog.search');
+    Route::get('/app/fitur', [fiturController::class, 'index'])->name('fitur');
     // daftar
     Route::get('/app/auth/signup', [AuthController::class, 'register'])
     ->middleware(RedirectIfAuthenticated::class)->name('signup');
@@ -37,7 +49,14 @@ Route::middleware('auth:admin')->group(function () {
     // logout
     Route::post('/app/auth/logout', [AuthController::class, 'logout'])->name('admin.logout');
     
-    // dashboard
-    Route::get('web/admin/dashboard', [adminController::class, 'index'])->name('admin.dashboard');
-    Route::get('web/admin/store', [adminController::class, 'store'])->name('admin.store');
+    // dashboard admin
+    Route::get('web/admin/dashboard', [adminController::class, 'dashboardAdmin'])->name('admin.dashboard');
+    Route::get('web/admin/profil', [adminController::class, 'adminProfil'])->name('admin.profil');
+    Route::get('web/admin/program', [adminController::class, 'adminProgram'])->name('admin.program');
+    Route::get('web/admin/program/create', [adminController::class, 'adminProgramCreate'])->name('admin.programCreate');
+    Route::get('web/admin/program/update', [adminController::class, 'adminProgramUpdate'])->name('admin.programUpdate');
+    Route::get('web/admin/program/delete', [adminController::class, 'adminProgramDelete'])->name('admin.programDelete');
+    Route::get('web/admin/store', [adminController::class, 'adminStore'])->name('admin.store');
+    Route::get('web/admin/blog', [adminController::class, 'adminBlog'])->name('admin.blog');
+    Route::get('web/admin/fitur', [adminController::class, 'adminFitur'])->name('admin.fitur');
 });

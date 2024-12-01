@@ -1,11 +1,12 @@
 @extends('content.main')
 @section('title', $title)
 @section('data')
-    <section class="py-12 bg-white sm:py-16 lg:py-10">
-        <div class="flex min-h-full flex-col justify-center px-6 lg:px-8">
+    <section class="py-12 sm:py-16 lg:py-10">
+        <div class="pt-16 lg:pt-24 sm:px-10 lg:px-16 mx-auto">
             <div class="sm:mx-auto sm:w-full sm:max-w-sm">
                 <h2 class="font-bold text-yellow-500 text-2xl lg:text-3xl text-center">Daftar Akun Admin</h2>
-                <p class="text-base font-semibold leading-7 text-gray-600 text-center">Himpunan Mahasiswa Sistem Informasi Kota Cerdas
+                <p class="text-base font-semibold leading-7 text-gray-600 text-center">Himpunan Mahasiswa Sistem Informasi
+                    Kota Cerdas
             </div>
 
             <div class="px-4 sm:mx-auto sm:w-full sm:max-w-sm">

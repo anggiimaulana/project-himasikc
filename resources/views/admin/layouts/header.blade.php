@@ -11,19 +11,48 @@
     <title>@yield('title')</title>
 </head>
 
-<script src="https://cdn.tailwindcss.com"></script>
 <script>
-    // State untuk toggle sidebar
     function toggleMobileSidebar() {
-        document.getElementById("sidebar").classList.toggle("w-64");
-        document.getElementById("sidebar").classList.toggle("w-20");
-        document.querySelectorAll(".sidebar-text").forEach(el => {
-            el.classList.toggle("hidden");
-        });
-    }
+        const sidebar = document.getElementById("sidebar");
+        const mainContent = document.getElementById("main-content");
 
-    // // Untuk mobile
-    // function toggleMobileSidebar() {
-    //     document.getElementById("sidebar").classList.toggle("hidden");
-    // }
+        // Logika untuk transisi hanya saat menutup
+        if (sidebar.classList.contains("w-64")) {
+            // Menutup sidebar
+            sidebar.classList.remove("transition-none");
+            sidebar.classList.replace("w-64", "w-24");
+
+            // Sembunyikan teks sidebar
+            document.querySelectorAll(".sidebar-text").forEach(el => {
+                el.classList.add("hidden");
+            });
+
+            // Sembunyikan teks HIMA-SIKC
+            const himasikcText = document.getElementById("himasikc");
+            if (himasikcText) {
+                himasikcText.classList.add("hidden");
+            }
+
+            // Atur ulang margin konten utama
+            mainContent.classList.replace("ml-64", "ml-24");
+        } else {
+            // Membuka sidebar
+            sidebar.classList.add("transition-none");
+            sidebar.classList.replace("w-24", "w-64");
+
+            // Tampilkan teks sidebar
+            document.querySelectorAll(".sidebar-text").forEach(el => {
+                el.classList.remove("hidden");
+            });
+
+            // Tampilkan teks HIMA-SIKC
+            const himasikcText = document.getElementById("himasikc");
+            if (himasikcText) {
+                himasikcText.classList.remove("hidden");
+            }
+
+            // Atur ulang margin konten utama
+            mainContent.classList.replace("ml-24", "ml-72");
+        }
+    }
 </script>

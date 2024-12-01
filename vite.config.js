@@ -8,4 +8,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        host: true, // atau gunakan IP lokal, contoh: '192.168.1.x'
+        // port: 5173,
+    },
 });

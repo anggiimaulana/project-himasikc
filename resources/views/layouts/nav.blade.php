@@ -1,9 +1,10 @@
-<header class="bg-white">
-    <nav class="container mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-14 border-b border-gray-200"
+<header id="header" class="bg-transparent fixed w-full z-50 transition-colors duration-300">
+    <nav class="container mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-14 border-b border-gray-300"
         aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
-                <img class="h-10 md:h-29 lg:h-12 w-auto" src="{{ asset('assets/himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
+                <img class="h-10 md:h-29 lg:h-12 w-auto bg-transparent" src="{{ asset('assets/LOGO-HIMA-SIKC FIX.png') }}" alt="logo-himasikc"
+                    loading="lazy">
             </a>
             <a href="/"
                 class=" font-bold text-yellow-500 hover:text-yellow-400 lg:hidden md:hidden mt-2 ml-3">HIMA-SIKC</a>
@@ -69,7 +70,8 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-x-2">
                     <a href="/" class="-m-1.5 p-1.5">
-                        <img class="h-10 w-auto" src="{{ asset('assets/himasikc.jpg') }}" alt="logo-himasikc" loading="lazy">
+                        <img class="h-10 w-auto" src="{{ asset('assets/himasikc.jpg') }}" alt="logo-himasikc"
+                            loading="lazy">
                     </a>
                     <a href="/" class="font-bold text-yellow-500 hover:text-yellow-400 ml-1">HIMA-SIKC</a>
                 </div>
@@ -127,5 +129,16 @@
 
     menuClose.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
+    });
+
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (window.scrollY > 0) {
+            header.classList.remove('bg-transparent');
+            header.classList.add('bg-white', 'shadow-md');
+        } else {
+            header.classList.remove('bg-white', 'shadow-md');
+            header.classList.add('bg-transparent');
+        }
     });
 </script>

@@ -2,11 +2,11 @@
 @section('title', $title)
 @section('data')
     <section class="py-12 bg-white sm:py-16 lg:py-10">
-        <div class="px-6 sm:px-10 lg:px-16 mx-auto">
+        <div class="pt-16 lg:pt-24 sm:px-10 lg:px-16 mx-auto">
             <div class="mx-10 lg:mx-14 flex items-center space-x-4 text-gray-600">
                 <a href="/app/program" class="text-gray-600 hover:text-yellow-400 font-semibold">Program</a>
                 <span class="text-gray-400">/</span>
-                <p href="#" class="text-yellow-500 hover:text-yellow-400 font-bold">Diesnatalis</p>
+                <p href="#" class="text-yellow-500 hover:text-yellow-400 font-bold">Academic Room</p>
             </div>
             {{-- <div class="max-w-md mx-auto text-center my-8">
                 <h1 class="font-bold text-yellow-500 text-2xl lg:text-3xl">PROGRAM KERJA</h1>
@@ -101,7 +101,7 @@
 
                 {{-- program lainnya --}}
                 <div class="col basis-1/5 mx-8 lg:mx-14">
-                    <div class="detail my-4 lg:my-6 text-center text-gray-600 ">
+                    <div class="detail my-2 md:my-4 lg:my-6 text-center text-gray-600 ">
                         <h1 class="font-bold text-grey-500 text-base lg:text-lg border-b border-gray-400 py-1 ">
                             Program Lainnya dari <span class="text-yellow-500">LITBANG</span>
                         </h1>
